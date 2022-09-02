@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    tools:context=".ui.CreateTaskActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="198dp"
+                android:background="@drawable/createtaskbg"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="-80dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="visible"
+                android:background="@drawable/big_item"
+                android:orientation="vertical"
+                android:paddingTop="22dp"
+                android:paddingBottom="22dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/AddTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/title"
+                        android:textColor="@color/yellow"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/title_Task"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/bgputask"
+                        android:fontFamily="sans-serif-black"
+                        android:hint="@string/what_you_up_to"
+                        android:inputType="text"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="#B5B5B5" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/AddDes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/short_note"
+                        android:textColor="@color/yellow"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/task_Des"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/bgputask"
+                        android:fontFamily="sans-serif-black"
+                        android:hint="@string/write_something"
+                        android:inputType="text"
+                        android:maxLength="80"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="#B5B5B5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/AddDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/timeline"
+                        android:textColor="@color/yellow"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/TimePicker"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bginput"
+                        android:text="@string/open_clock"
+                        android:fontFamily="sans-serif-black"
+                        android:textAllCaps="false"
+                        android:textColor="@color/yellow"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/task_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/time_display"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/bgColor_overlay"
+                        android:textColorHint="#B5B5B5" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/SaveTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/btn_start"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:text="Create Task"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/Cancel_Task"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/btn_cancel"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellow"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

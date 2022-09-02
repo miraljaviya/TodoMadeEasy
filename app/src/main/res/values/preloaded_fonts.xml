@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abhaya_libre_bold</item>
+        <item>@font/alegreya</item>
+        <item>@font/allerta_stencil</item>
+        <item>@font/averia_libre_bold</item>
+        <item>@font/open_sans</item>
+        <item>@font/open_sans_bold</item>
+        <item>@font/open_sans_semibold</item>
+    </array>
+</resources>

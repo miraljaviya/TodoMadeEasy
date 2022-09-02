@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <RelativeLayout
+        android:id="@+id/views"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@drawable/big_item">
+
+        <TextView
+            android:id="@+id/titleTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/TaskDate"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/amaranth_bold"
+            android:maxLines="1"
+            android:text="Buy Whisky"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/titleTask"
+            android:gravity="start"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/TaskDate"
+            android:fontFamily="sans-serif-medium"
+            android:text="i need to buy atleast 4 bottles of whiskey"
+            android:textColor="#5E221601"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TaskDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/averia_libre_bold"
+            android:text="Tomorrow"
+            android:textColor="#FBBD03"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

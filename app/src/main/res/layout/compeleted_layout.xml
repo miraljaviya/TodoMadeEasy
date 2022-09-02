@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/emptyView">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:text="@string/emptyViewTip"
+          android:drawableTop="@drawable/emptylist_icon"
+          android:layout_centerInParent="true"
+          android:fontFamily="sans-serif-black"
+          android:textColor="@color/Black"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:padding="12dp"
+          android:id="@+id/empty" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="@string/emptyViewTip1"
+          android:textAlignment="center"
+          android:fontFamily="sans-serif-black"
+          android:id="@+id/actiontoTake1"
+          android:layout_below="@id/empty"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="@string/emptyViewTip2"
+          android:textAlignment="center"
+          android:fontFamily="sans-serif-black"
+          android:id="@+id/actiontoTake2"
+          android:layout_below="@id/actiontoTake1"/>
+   </RelativeLayout>
+
+   <com.google.android.gms.ads.AdView
+       android:id="@+id/adView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       ads:adSize="BANNER"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_margin="20dp"
+       ads:adUnitId="ca-app-pub-9571348963607028/6278192951"
+       xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+   </com.google.android.gms.ads.AdView>
+
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/CompletedListView" />
+</RelativeLayout>
